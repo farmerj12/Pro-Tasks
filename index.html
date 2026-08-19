@@ -915,7 +915,7 @@ const isConnected=()=>!!localStorage.getItem('pt_refresh_token');
 //  OAUTH PKCE
 // ══════════════════════════════════════════════════════════════════
 // ── SET YOUR DROPBOX APP KEY HERE ──
-const DBX_APP_KEY='15k8hzftx0cu6vj';
+const DBX_APP_KEY='acyaly00raleo8h';
 const REDIRECT_URI=window.location.origin+window.location.pathname.replace(/\/$/,'');
 const DBX_PATH='/pro-tasks.json';
 
@@ -926,7 +926,7 @@ async function sha256(s){return crypto.subtle.digest('SHA-256',_e.encode(s));}
 function randStr(n=64){const a=new Uint8Array(n);crypto.getRandomValues(a);return b64url(a);}
 
 async function startOAuth(){
-  if(DBX_APP_KEY==='YOUR_APP_KEY_HERE'){
+  if(DBX_APP_KEY==='FUCK_YOU'){
     showConnectErr('App key not set — open the file and set DBX_APP_KEY.');return;
   }
   const v=randStr(64),ch=b64url(await sha256(v));
